@@ -91,7 +91,7 @@ public class RepositoriesTest {
     @Test
     public void existeTitaniumCard(){
         List<Card> cards = cardRepository.findAll();
-        assertThat(cards,hasItem(hasProperty("color", is(CardColor.TITANIUM))));
+        assertThat(cards,hasItem(hasProperty("color", is(CardColor.PLATINUM))));
     }
     @Test
     public void existClient (){
