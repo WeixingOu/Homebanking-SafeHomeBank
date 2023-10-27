@@ -11,6 +11,6 @@ public class ClientUtils {
     }
 
     public static boolean regExpPassValidation(String input) {
-        return Pattern.matches("(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,15}", input);
+        return Pattern.matches("(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?!.*[<>\"])[A-Za-z\\d^<>\"]{8,15}", input);
     }
 }
