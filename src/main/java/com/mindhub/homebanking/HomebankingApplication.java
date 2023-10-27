@@ -28,7 +28,7 @@ public class HomebankingApplication {
 	public CommandLineRunner initData(ClientRepository clientRepository, AccountRepository accountRepository, TransactionRepository transactionRepository, LoanRepository loanRepository, ClientLoanRepository clientLoanRepository, CardRepository cardRepository) {
 		// CommandLineRunner are methods that can be implemented to run at application startup
 		return (args) -> {
-			/*// Create clients
+			// Create clients
 			Client client1 = new Client("Melba", "Morel", "melba@mindhub.com", passwordEncoder.encode("MelBA98!"));
 			Client client2 = new Client("Alex", "Fulsch", "alexfu@mindhub.com", passwordEncoder.encode("g"));
 			Client client3 = new Client("admin", "admin", "admin@mindhub.com", passwordEncoder.encode("admin123"));
@@ -124,7 +124,7 @@ public class HomebankingApplication {
 			// Save cards to the database
 			cardRepository.save(card1);
 			cardRepository.save(card2);
-			cardRepository.save(card3);*/
+			cardRepository.save(card3);
 		};
 	}
 }
