@@ -108,8 +108,9 @@ const SignUp = {
                 <div class="my-2 d-flex justify-content-between align-items-center">
                     <div class="form-check">
                         <label class="form-check-label text-muted"  for="invalidCheck">
-                        <input type="checkbox" class="form-check-input" value="" id="invalidCheck" required>
-                            I agree to all Terms & Conditions
+                            <input type="checkbox" class="form-check-input" value="" id="invalidCheck" required>
+                                I agree to all Terms & Conditions
+                        </label>
                     </div>
                 </div>
                 <div class="text-center mt-4 font-weight-light">
