@@ -21,8 +21,8 @@ const SignUp = {
             .then(() => {
                 this.fNameInput = "";
                 this.lNameInput = "";
-                this.emailInput: '';
-                this.passwordInput: '';
+                this.emailInput = '';
+                this.passwordInput = '';
             })
             .catch(error => {
                 console.log(error);
