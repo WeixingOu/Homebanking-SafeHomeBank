@@ -1,0 +1,41 @@
+.promotions {
+    border-radius: var(--border-radius-3);
+    background: #4b49acce;
+    color: white;
+
+    & .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--padding-3);
+
+        & a {
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            color: var(--color-primary);
+
+        }
+    }
+
+    & .promotion-container {
+        & .promotion {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: var(--padding-3);
+            transition: all 300ms ease;
+            user-select: none;
+        }
+    }
+}
+
+.background-icon {
+    display: flex;
+    justify-content: flex-end;
+
+    &::before {
+        content: url(../../../assets/images/shape.svg);
+        position: absolute;
+    }
+}

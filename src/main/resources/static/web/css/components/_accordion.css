@@ -1,0 +1,26 @@
+.accordion-container {
+    background: var(--color-white);
+    border-radius: var(--border-radius-3);
+    padding: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.accordion {
+    background: var(--color-white);
+    margin-top: 2.5rem;
+    border-radius: var(--border-radius-3);
+    padding: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.accordion-item {
+    width: 100%;
+}

@@ -1,0 +1,110 @@
+nav {
+    width: 100%;
+    background: var(--color-white);
+    padding: 1rem 0;
+
+    & .container-fluid {
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 96%;
+    }
+
+    & .navbar-brand {
+        width: 10rem;
+    }
+
+    & .input-group {
+        padding: var(--padding-2) var(--padding-3);
+        width: 32vw;
+        border-radius: var(--border-radius-2);
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        left: 15%;
+
+        & input {
+            color: var(--color-dark);
+            background: transparent;
+            width: 100%;
+
+            &::placeholder {
+                color: var(--color-gray-dark);
+            }
+        }
+    }
+    
+    & .navbar-nav {
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;
+
+        & .navbar-toggler {
+            color: var(--color-dark);
+            font-size: 1.5rem;
+            border-color: var(--color-gray-dark);
+        }
+
+        & .theme-btn {
+            display: flex;
+            width: 5rem;
+            height: 2rem;
+            border-radius: var(--border-radius-2);
+
+            & i {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                padding: .5rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &.active {
+                    background: var(--color-dark);
+                    border-radius: var(--border-radius-2);
+                    color: white;
+                }
+            }
+        }
+
+        & .profile {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            & span {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            & .profile-photo {
+                display: block;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            & .dropdown-menu[data-bs-popper] {
+                top: 100%;
+                left: 0;
+                margin-top: var(--bs-dropdown-spacer);
+            
+                & span {
+                    font-size: 1rem;
+                }
+            
+                & i {
+                    font-size: 1.5rem;
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+}

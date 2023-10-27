@@ -1,0 +1,35 @@
+.dark-theme {
+    --color-light: #23232a;
+    --color-white: #313134;
+    --bs-secondary-bg-rgb: 35, 35, 42;
+    --color-dark: #ddd;
+    --color-gray-dark: #adacb5;
+    --bs-secondary-color: #adacb5;
+    --bs-white-rgb: #313134;
+    --bs-body-bg: #313134;
+    --bs-body-color: #ddd;
+    --color-dark-text: #27282f;
+    --color-shadow: rgba(250, 250, 250, 0.1);
+    --color-detail: #313134;
+}
+
+.body-container.dark-theme {
+    background: var(--color-light);
+    color: var(--color-dark);
+}
+
+.account.dark-theme {
+    background: linear-gradient(#26556a, #212433);
+    color: white;
+
+    & .icon {
+        background: #ddd;
+
+        & i {
+            color: #46687b !important;
+        }
+        & p {
+            color: #46687b !important;
+        }
+    }
+}

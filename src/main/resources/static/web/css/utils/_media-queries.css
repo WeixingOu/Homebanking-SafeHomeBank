@@ -1,0 +1,210 @@
+@media screen and (max-width: 1024px) {
+    nav .input-group {
+        display: none;
+    }
+
+    nav .navbar-nav {
+        gap: 2rem;
+        flex-direction: row;
+    }
+
+    .navbar button {
+        display: inline;
+    }
+
+    @keyframes slideIn {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    @keyframes slideOut {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+    .slide-enter-active {
+        animation: slideIn 300ms ease forwards;
+    }
+    
+    .slide-leave-active {
+        animation: slideOut 300ms ease forwards;
+    }
+
+    main {
+        grid-template-columns: 1fr !important;
+
+        & aside {
+            position: fixed;
+            top: 0; left: 0;
+            z-index: 3;
+            background: var(--color-white);
+            width: 22rem;
+            height: 100vh;
+            box-shadow: 2rem 0 2rem var(--color-primary-light);
+
+            & button#close-btn {
+                display: inline-block;
+                width: 3rem;
+                height: 3rem;
+                position: absolute;
+                top: 0; right: 1rem;
+                z-index: 4;
+                background: transparent;
+
+                & i {
+                    font-size: 3rem;
+                    color: var(--color-dark);
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            & .sidebar {
+                margin-top: 4rem;
+            }
+
+            & .updates {
+                display: none;
+            }
+        }
+
+        & section.middle .accounts {
+            & .accounts-container {
+                width: 100%;
+                max-width: 100%;
+                flex-wrap: wrap;
+                overflow-x: auto;
+                height: 17rem;
+                margin-bottom: 2rem;
+
+                & .account {
+                    flex-grow: 0;
+                    flex-basis: 48%;
+                }
+            }
+        }
+
+        & section.right .review {
+            align-items: center;
+        }
+    }
+
+    footer {
+        padding-left: 0;
+        padding-right: 2rem;
+    }
+
+    .account {
+        flex-grow: 0;
+        flex-basis: 100% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        & .container-fluid {
+            flex-wrap: nowrap !important;
+        }
+    }
+
+    nav .navbar-nav {
+        gap: .6rem;
+        flex-direction: row;
+
+        & .profile h5,
+        & .profile span {
+            display: none;
+        }
+    }
+
+    main {
+        grid-template-columns: 1fr !important;
+
+        & section.middle .accounts {
+            width: 94vw !important;
+
+            & .accounts-container {
+                width: 100%;
+                max-width: 100%;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+
+                & .account {
+                    flex-basis: 100%;
+                }
+            }
+        }
+
+        & table {
+            width: 94vw !important;
+
+            & thead tr th:last-child,
+            & thead tr th:first-child {
+                display: none;
+            }
+
+            & tbody tr td:last-child,
+            & tbody tr td:first-child {
+                display: none;
+            }
+
+            & thead tr th:nth-last-child(2) {
+                display: none;
+            }
+
+            & tbody tr td:nth-last-child(2) {
+                display: none;
+            }
+        }
+
+        & .loans {
+            width: 94vw !important;
+
+            & .date-time,
+            & .payments {
+                display: none;
+            }
+        }
+
+        & .review {
+            width: 94vw !important;
+            
+            & #chart {
+                overflow: auto;
+            }
+        }
+
+        & .monthly-report {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+
+    .account-detail {
+        width: 8rem;
+        height: 8rem;
+        margin-bottom: .5rem;
+        & i { 
+            padding: .5rem;
+            padding-left: .75rem;
+            padding-right: .75rem;
+            font-size: 1rem;
+        }
+
+        & h4 {
+            font-size: .5rem;
+        }
+        & h2 {
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.recent-transactions {
+    margin-top: 1.5rem;
+
+    & h2 {
+        margin-bottom: .8rem;
+    }
+
+    & table {
+        width: 100%;
+        border-radius: var(--border-radius-3);
+        padding: var(--padding-3);
+        text-align: center;
+        box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+        transition: all 300ms ease;
+
+        &:hover {
+            box-shadow: none;
+        }
+
+        & thead th {
+            font-size: 14px;
+            border: none;
+            padding: var(--padding-3);
+
+            &:first-child {
+                border-top-left-radius: 1.6rem;
+            }
+            &:last-child {
+                border-top-right-radius: 1.6rem;
+            }
+        }
+
+        & tbody td {
+            height: 2.8rem;
+            padding: var(--padding-3);
+
+            &.text-primary {
+                cursor: pointer;
+            }
+        }
+
+        & tfoot {
+            & th {
+                border-bottom-left-radius: 1.6rem;
+                border-bottom-right-radius: 1.6rem;
+                font-size: 14px;
+                border: none;
+            }
+        }
+    }
+
+    & a {
+        text-align: center;
+        display: block;
+        margin: 1rem auto;
+        color: var(--color-primary) !important;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

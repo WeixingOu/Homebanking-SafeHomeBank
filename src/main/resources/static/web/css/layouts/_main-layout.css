@@ -1,0 +1,9 @@
+main {
+    display: grid;
+    grid-template-columns: 16rem auto 30rem;
+    gap: 2rem;
+    width: 96%;
+    margin: 1.5rem auto 0rem;
+    padding-bottom: 4rem;
+    position: relative;
+}

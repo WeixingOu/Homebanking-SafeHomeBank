@@ -1,0 +1,224 @@
+/* Compnents */
+@import '../components/_navbar.css';
+@import '../components/_sidebar.css';
+@import '../components/_report.css';
+@import '../components/_transactions-table.css';
+@import '../components/_loans-table.css';
+@import '../components/_loan-chart.css';
+@import '../components/_footer.css';
+@import '../components/_dowload-form.css';
+
+.accounts {
+    display: flex;
+    margin-top: 1rem;
+    position: relative;
+
+    & .add-account {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        border-radius: var(--border-radius-3);
+        padding: var(--padding-3);
+        background: linear-gradient(#7f8191, #27282f);
+        box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+        height: 16rem;
+        margin-left: 1.5rem;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    & .accounts-container {
+        width: fit-content;
+        max-width: 635px;
+        display: flex;
+        overflow-x: hidden;
+        gap: 1.5rem;
+        position: relative;
+
+        & .account.dark-theme{
+            background: linear-gradient(#26556a, #212433);
+            color: white;
+
+            & .icon {
+                background: #ddd;
+                & i {
+                    color: #46687b !important;
+                }
+                & p {
+                    color: #46687b !important;
+                }
+            }
+        }
+
+        & .account {
+            background: linear-gradient(#429cd4, #3c4597);
+            box-shadow: 0 2rem 3rem var(--color-primary-light);
+            padding: var(--padding-3);
+            border-radius: var(--border-radius-3);
+            color: var(--color-white);
+            height: 16rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 300ms ease;
+            position: relative;
+            z-index: 0;
+            cursor: pointer;
+            flex: 0 0 auto;
+            min-width: 30%;
+            width: 300px;
+            user-select: none;
+
+            &:hover {
+                box-shadow: none;
+            }
+
+            & .top {
+                display: flex;
+                flex-direction: column;
+
+                & h2 {
+                    font-weight: 200;
+                    font-size: 1.4rem;
+                }
+            }
+
+            & .middle {
+                display: flex;
+                flex-direction: column;
+            }
+
+            & .bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+
+            & .semicircle {
+                position: absolute;
+                right: -1px;
+                top: -1px;
+                width: 80px;
+                height: 80px;
+                border-top-right-radius: var(--border-radius-3);
+                background: var(--color-secondary);
+                clip-path: polygon(0 0, 100% 0, 100% 100%);
+                z-index: 1;
+            }
+
+            & .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background-color: var(--color-white);
+                border-radius: 50%;
+                width: 4rem;
+                height: 4rem;
+                z-index: 2;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                & i {
+                    font-size: 2rem;
+                    color: var(--color-secondary);
+                    margin-bottom: 1rem;
+                }
+                & P {
+                    position: absolute;
+                    bottom: 9px;
+                    font-size: .66rem;
+                }
+            }
+
+            & .deleteAccount {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: transparent;
+                z-index: 90;
+                font-size: 2.25rem;
+            }
+        }
+    }
+}
+
+
+.account-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5rem;
+    border-radius: var(--border-radius-3);
+    padding: var(--padding-3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: var(--color-detail);
+    box-shadow: 0 2rem 3rem var(--color-shadow);
+    height: 16rem;
+    width: 16rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: none;
+    }
+
+    & i {
+        background: var(--bs-danger);
+        padding: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-radius: 50%;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    & h4,
+    & h2 {
+        color: var(--color-dark);
+    }
+}
+
+.sales {
+    & .item {
+        margin-bottom: 1.5rem;
+        background: var(--color-white);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.4rem var(--padding-3);
+        border-radius: var(--border-radius-3);
+        box-shadow: 0 2rem 3rem var(--color-shadow);
+        transition: all 300ms ease;
+
+        & .right {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+            margin: 0;
+            width: 100%;
+            align-items: center;
+        }
+
+        & i {
+            padding: 1rem;
+            border-radius: 50%;
+            display: flex;
+        }
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    & h2 {
+        margin-bottom: .8rem;
+    }
+
+
+}

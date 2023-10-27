@@ -1,0 +1,18 @@
+.monthly-report {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-content: space-between;
+
+    & h1 {
+        font-weight: 700;
+        font-size: 1.8rem;
+        user-select: none;
+        cursor: default;
+    }
+
+    & h3 {
+        user-select: none;
+        cursor: default;
+    }
+}

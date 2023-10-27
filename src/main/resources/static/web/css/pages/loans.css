@@ -1,0 +1,93 @@
+/* Compnents */
+@import '../components/_navbar.css';
+@import '../components/_sidebar.css';
+@import '../components/_footer.css';
+@import '../components/_loans-table.css';
+
+.grid-margin {
+    margin-bottom: 2.5rem;
+}
+
+.stretch-card {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.stretch-card > .card {
+    width: 100%;
+    min-width: 100%;
+    border-radius: var(--border-radius-3);
+    height: fit-content;
+}
+
+.card .card-body {
+    padding: var(--padding-3);
+
+    & img {
+        width: 5rem;
+    }
+}
+
+.loans-actives {
+    margin-top: 1.5rem;
+
+    & h2 {
+        margin-bottom: .8rem;
+    }
+
+    & table {
+        width: 100%;
+        border-radius: var(--border-radius-3);
+        padding: var(--padding-3);
+        text-align: center;
+        box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+        transition: all 300ms ease;
+
+        &:hover {
+            box-shadow: none;
+        }
+
+        & thead th {
+            font-size: 14px;
+            border: none;
+            padding: var(--padding-3);
+
+            &:first-child {
+                border-top-left-radius: 1.6rem;
+            }
+            &:last-child {
+                border-top-right-radius: 1.6rem;
+            }
+        }
+
+        & tbody td {
+            height: 2.8rem;
+            padding: var(--padding-3);
+
+            &.text-primary {
+                cursor: pointer;
+            }
+        }
+
+        & tbody tr:last-child td {
+            &:first-child {
+                border-bottom-left-radius: 1.6rem;
+            }
+            &:last-child {
+                border-bottom-right-radius: 1.6rem;
+            }
+        }
+    }
+
+    & a {
+        text-align: center;
+        display: block;
+        margin: 1rem auto;
+        color: var(--color-primary) !important;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

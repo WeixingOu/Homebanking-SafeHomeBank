@@ -1,0 +1,51 @@
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    transform: translateX(0);
+
+    & button {
+        display: none;
+    }
+
+    & .sidebar a {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        height: 4.2rem;
+        text-decoration: none;
+        position: relative;
+
+        &:hover {
+            color: var(--color-primary) !important;
+
+            & i {
+                margin-left: 2rem;
+            }
+        }
+
+        & i {
+            font-size: 1.5rem;
+            margin-left: 3rem;
+            transition: all 300ms ease;
+        }
+
+        &.active {
+            background: var(--color-white);
+            color: var(--color-primary) !important;
+
+            &::before {
+                content: '';
+                width: 6px;
+                height: 100%;
+                position: absolute;
+                background: var(--color-primary);
+            }
+        }
+
+        & h4 {
+            font-weight: 500;
+        }
+    }
+}

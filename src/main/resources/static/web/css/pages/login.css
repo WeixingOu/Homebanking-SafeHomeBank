@@ -1,0 +1,130 @@
+.page-body-wrapper.full-page-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 0;
+}
+
+.page-body-wrapper {
+    min-height: calc(100vh - 60px);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 60px;
+}
+
+.content-wrapper {
+    background: var(--color-light);
+    padding: 2.375rem 2.375rem;
+    width: 100%;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+
+.auth .auth-form-light {
+    background:  var(--color-white);
+    border-radius: var(--border-radius-3);
+}
+
+.auth .brand-logo {
+    margin-bottom: 2rem;
+
+    & img {
+        width: 150px;
+        vertical-align: middle;
+        border-style: none;
+    }
+}
+
+h4, .h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+} 
+
+.font-weight-light {
+    font-weight: 300 !important;
+    font-size: 16px;
+}
+
+h6, .h6 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.auth form .form-group .form-control {
+    background: transparent;
+    border-radius: 0;
+    border: 1px solid #CED4DA;
+    font-weight: 400;
+    padding: var(--padding-2) var(--padding-3);
+    border-radius: var(--border-radius-2);
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 4rem;
+}
+
+.auth form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.auth form .auth-form-btn {
+    padding: 1rem 3rem;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--border-radius-1);
+    padding: 0.8rem 0;
+    margin-top: 2rem;
+    text-decoration: none;
+    transition: all 300ms ease;
+
+    &:hover {
+        box-shadow: 0 1rem 2rem var(--color-primary-light);
+    }
+}
+
+.auth form .auth-link {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--color-primary) !important;
+    }
+}
+
+.form-check {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-check .form-check-label {
+    min-height: 18px;
+    display: block;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.auth form .auth-link {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.text-primary {
+    color: var(--color-primary);
+    font-size: 16px;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
