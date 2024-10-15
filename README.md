@@ -47,6 +47,8 @@ SafeHome-Bank/
 └── README.md
 ```
 
+This directory layout visually organizes the project's files and folders, making it easy to understand how the project is structured. The frontend is housed within the static/web directory inside the main resources directory, ensuring that both front and backend components are managed under a unified project repository.
+
 ## Features
 
 - **Financial Management**: Users can view balances, recent transactions, and manage their financial statements.
